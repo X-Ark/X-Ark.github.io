@@ -1,0 +1,336 @@
+<html><head lang="en"><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>GVSL</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon" type="image/png" href="./index_files/icon.png">
+    <link rel="stylesheet" href="./index_files/bootstrap.min.css">
+    <link rel="stylesheet" href="./index_files/font-awesome.min.css">
+    <link rel="stylesheet" href="./index_files/codemirror.min.css">
+    <link rel="stylesheet" href="./index_files/app.css">
+    <link rel="stylesheet" href="./index_files/bootstrap.min(1).css">
+
+    <script type="text/javascript" async="" src="./index_files/analytics.js"></script>
+    <script type="text/javascript" async="" src="./index_files/analytics(1).js"></script>
+    <script async="" src="./index_files/js"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-110862391-3');
+    </script>
+
+    <script src="./index_files/jquery.min.js"></script>
+    <script src="./index_files/bootstrap.min.js"></script>
+    <script src="./index_files/codemirror.min.js"></script>
+    <script src="./index_files/clipboard.min.js"></script>
+
+    <script src="./index_files/app.js"></script>
+</head>
+
+<body data-gr-c-s-loaded="true">
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                <img src="./index_files/images/name.png" class="img-responsive" alt="overview"><br>
+                in 3D Medical Image Self-supervised Pre-training
+            <br /><br />
+            <small><strong style="color:rgb(255,0,0);">
+                [Accepted by CVPR 2023]
+            </strong></small>
+            <br /><br />
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://yutinghe-list.github.io/">
+                          Yuting He
+                        </a><sup>1</sup>
+                    </li>
+                    <li>
+                        <a href="https://cse.seu.edu.cn/2019/0103/c23024a257233/page.htm">
+                        Guanyu Yang
+                        </a><sup>1</sup>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com.hk/citations?user=v8K8HIkAAAAJ&hl=zh-CN">
+                        Rongjun Ge
+                        </a><sup>2</sup>
+                    </li>
+                    <li>
+                        <a href="https://scholar.google.com.hk/citations?user=LxjxwpgAAAAJ&hl=zh-CN">
+                        Yang Chen
+                        </a><sup>1</sup>
+                    </li>
+                     <li>
+                          Jean-Louis Coatrieux
+                        <sup>3</sup>
+                    </li>
+                     <li>
+                        <a href="https://sites.google.com/site/borriewang/">
+                          Boyu Wang
+                        </a><sup>4</sup>
+                    </li>
+                     <li>
+                        <a href="http://digitalimaginggroup.ca/members/shuo.php">
+                          Shuo Li
+                        </a><sup>5</sup>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <sup>1</sup>Southeast University
+                    </li>
+                    <li>
+                        <sup>2</sup>Nanjing University of Aeronautics and Astronautics
+                    </li>
+                    <li>
+                        <sup>3</sup>University of Rennes 1
+                    </li>
+                    <li>
+                        <sup>4</sup>Western University
+                    </li>
+                    <li>
+                        <sup>5</sup>Case Western Reserve University
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://drive.google.com/file/d/1KPm9ui07S6KYlU-k0Qf7tcqh-o0Xh6Uo/view?usp=share_link" target='_blank'>
+                        <img src="./index_files/images/paper.png" height="80px"><br>
+                            <h4><strong>Main Paper</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#video">
+                        <img src="index_files/images/youtube_icon_dark.png" height="80px"><br>
+                            <h4><strong>Video</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <!--<a href="./supplementary.pdf" target='_blank'>-->
+                        <img src="index_files/images/slice.png" height="80px"><br>
+                            <h4><strong>Slice</strong></h4>
+                        <!--</a>-->
+                    </li>
+                     <!-- <li>
+                        <a href="#dataset">
+                        <img src="./index_files/images/data.png" height="80px"><br>
+                            <h4><strong>Data</strong></h4>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="https://github.com/YutingHe-list/GVSL">
+                        <img src="./index_files/images/github_pad.png" height="80px"><br>
+                            <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#BibTeX">
+                        <img src="./index_files/images/bibtex.jpg" height="80px"><br>
+                            <h4><strong>BibTeX</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Overview</strong>
+                </h3>
+                <img src="./index_files/images/clus.png" class="img-responsive" alt="overview"><br>
+                <p class="text-justify">
+                    Learning inter-image similarity is crucial for 3D medical images self-supervised pre-training, due to their sharing of numerous same semantic regions. However, the lack of the semantic prior in metrics and the semantic-independent variation in 3D medical images make it challenging to get a reliable measurement for the inter-image similarity, hindering the learning of consistent representation for the same semantics. We investigate the challenging problem of this task, i.e., learning a consistent representation between images for a clustering effect of the same semantic features. We propose a novel visual similarity learning paradigm, Geometric Visual Similarity Learning, which embeds the prior of topological invariance into the measurement of the inter-image similarity for consistent representation of semantic regions.
+                </p>
+            </div>
+        </div>
+
+        <div class="row" id="video">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Video</strong>
+                </h3>
+                <p style="color:blue;font-size:11px;">(Waiting...)</p>
+                <div class="text-center">
+                    <!--<video id="video_id" width="100%" controls="" controlsList="nodownload">>
+                        <source src="./index_files/videos/video.mp4" type="video/mp4">
+                        <track label="English" kind="subtitles" srclang="en" src="./index_files/videos/captions.vtt">
+                    </video>
+
+                    <script type="text/javascript">
+                        $(document).ready(function() {
+                        var video = document.querySelector('#video_id'); // get the video element
+                        var tracks = video.textTracks; // one for each track element
+                        var track = tracks[0]; // corresponds to the first track element
+                        track.mode = 'hidden';});
+                    </script>-->
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Highlights</strong>
+                </h3>
+                <p class="text-justify">
+                    <ul>
+                        <li>
+                            Advance the learning of inter-image similarity in 3D medical image self-supervised pre-training and push the representability of same visual semantics between images.
+                        </li>
+                        <li>
+                            A powerful and novel pretext learning paradigm, Geometric Visual Similarity Learning, is proposed to embeds the prior of topological invariance into the measurement for reliable learning.
+                        </li>
+                        <li>
+                            A reliable and novel projection head, Z-Matching head, is proposed for simultaneously powerful global and local representation in learning geometric matching-based pre-training.
+                        </li>
+                        <li>
+                            Experiments demonstrates our learning of inter-image similarity yields more powerful inner-scene, inter-scene, and global-local transferring ability on four challenging 3D medical image tasks.
+                        </li>
+                    </ul>
+                </p>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Why learning inter-image similarity is crucial for 3D medical image SSP?</strong>
+                </h3>
+                <div class="wrap">
+                    <img src="./index_files/images/in.png" class="img-responsive" alt="overview">
+                    <div class="txt">
+                        <li>
+                        Same category 3D medical images share numerous same semantic regions due to the consistent human anatomies and the complete spatial information in 3D vision, having large inter-image similarity.
+                        </li>
+                        <li>
+                        Natural images have large semantic difference between images whose inter-image similarity is weak.
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Challenge</strong>
+                </h3>
+                <div class="wrap">
+                    <div class="txtleft">
+                        It is challenging to measure a reliable inter-image similarity.
+                        <li>
+                        Large appearance similarity between different semantic regions: the Myo and RA regions in images A and B.
+                        </li>
+                        <li>
+                        Appearance dissimilarity between same semantic regions: RA regions are different in images B and C.
+                        </li>
+                    </div>
+                    <img src="./index_files/images/chall.png" class="img-responsive" alt="overview">
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Motivation</strong>
+                </h3>
+                <div class="wrap">
+                    <img src="./index_files/images/fig.png" class="img-responsive" alt="overview">
+                    <div class="txt">
+                        The <strong style="color:rgb(255,0,0);">topological invariance</strong> of the visual semantics between the 3D medical images provides a motivation to discover their inter-image correspondence.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>The framework of our GVSL</strong>
+                </h3>
+                <img src="./index_files/images/framework.png" class="img-responsive" alt="overview">
+                <p class="text-justify">
+                    <li>
+                        Our GVSL learns the GM from the representation of the semantics in images, thus driving the learning of inter-image similarity via the gradient in backpropagation.
+                    </li>
+                    <li>
+                        Our Z-Matching head learns affine and deformable matchings simultaneously for powerful global and local representations.
+                    </li>
+                    <li>
+                        For efficient learning, it also takes a fundamental pretext task, the self-restoration, for a basic representation of semantics, thus giving a warm-up for GM learning.
+                    </li>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Intuitions on GVSL’s behavior</strong>
+                </h3>
+                <div class="wrap">
+                    <div class="txtleft">
+                        The prior of topological invariance in GM embeds a topology manifold into the metric, thus bringing an efficient measurement for inter-image similarity and guiding the clustering effect of the same semantic features.
+                    </div>
+                    <img src="./index_files/images/intu.png" class="img-responsive" alt="overview">
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="BibTeX">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>BibTeX</strong>
+                </h3>
+               If you find our project or pre-trained parameters useful in your research, please cite:
+                <pre class="w3-panel w3-leftbar w3-light-grey" style="white-space: pre-wrap; font-family: monospace; font-size: 10px">
+@InProceedings{He_2023_CVPR,
+    author    = {Yuting He, Guanyu Yang, Rongjun Ge, Yang Chen, Jean-Louis Coatrieux, Boyu Wang, Shuo Li},
+    title     = {Geometric Visual Similarity Learning in 3D Medical Image Self-supervised Pre-training},
+    booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+    month     = {June},
+    year      = {2023},
+    pages     = {}
+}</pre>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    <strong>Acknowledgments</strong>
+                </h3>
+                The website template was borrowed from <a href="https://sggpoint.github.io">Chaoyi Zhang</a>.
+                <p></p>
+            </div>
+        </div>
+    </div>
+
+
+</body></html>

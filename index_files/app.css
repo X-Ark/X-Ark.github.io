@@ -1,0 +1,40 @@
+.CodeMirror {
+    font-size: .8em;
+    height: auto;
+}
+
+.CodeMirror-scroll {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+#header_img {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+* {
+    box-sizing: border-box;
+}
+
+.wrap {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+.wrap img {
+    width: 50%;
+    vertical-align: middle;
+}
+
+.txt {
+    width: 50%;
+    vertical-align: middle;
+    padding-left: 20px;
+}
+.txtleft {
+    width: 50%;
+    vertical-align: middle;
+    padding-right: 20px;
+}
